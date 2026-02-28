@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги и цены — CREATOR-BOX</title>
+    <meta name="description" content="Услуги по созданию контента для маркетплейсов: карточки товаров, видео, аудио. Расчёт стоимости онлайн.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">CREATOR-BOX</span>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="services.html" class="nav-link active">Услуги</a>
+                <a href="portfolio.html" class="nav-link">Портфолио</a>
+                <a href="about.html" class="nav-link">О нас</a>
+                <a href="contacts.html" class="nav-link">Контакты</a>
+            </nav>
+            <a href="contacts.html" class="btn btn-primary header-btn">Связаться</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Услуги и <span class="gradient-text">цены</span></h1>
+                <p class="page-subtitle">Что мы создаём для вашего бизнеса на маркетплейсах</p>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="services-page">
+            <div class="container">
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Базовый</h3>
+                            <div class="pricing-price">от 1 500 ₽</div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>3-5 фото для карточки товара</li>
+                            <li>Инфографика (1-2 варианта)</li>
+                            <li>Обработка и ретушь</li>
+                            <li>Соответствие требованиям маркетплейсов</li>
+                            <li>Помётка "Создано ИИ"</li>
+                            <li class="missing">Видеоролик</li>
+                            <li class="missing">Аудиотрек</li>
+                        </ul>
+                        <div class="pricing-note">Все материалы маркируются как созданные с помощью ИИ в соответствии с законодательством РФ 2026</div>
+                        <a href="contacts.html" class="btn btn-outline">Заказать</a>
+                    </div>
+                    
+                    <div class="pricing-card featured">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Стандарт</h3>
+                            <div class="pricing-price">от 5 000 ₽</div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>Базовый пакет (фото + инфографика)</li>
+                            <li>Короткое видео (15 секунд)</li>
+                            <li>Монтаж и постобработка</li>
+                            <li>Соответствие требованиям маркетплейсов</li>
+                            <li>Помётка "AI Assisted"</li>
+                            <li>Базовая оптимизация для SEO</li>
+                            <li class="missing">Аудиотрек</li>
+                        </ul>
+                        <div class="pricing-note">Все материалы маркируются как созданные с помощью ИИ в соответствии с законодательством РФ 2026</div>
+                        <a href="contacts.html" class="btn btn-primary">Заказать</a>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Премиум</h3>
+                            <div class="pricing-price">от 10 000 ₽</div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>Полный набор изображений</li>
+                            <li>Видеоролик (до 30 секунд)</li>
+                            <li>Оригинальный аудиотрек</li>
+                            <li>Эксклюзивная инфографика</li>
+                            <li>Полная маркировка ИИ</li>
+                            <li>Рекомендации по размещению</li>
+                            <li>Приоритетная поддержка</li>
+                        </ul>
+                        <div class="pricing-note">Все материалы маркируются как созданные с помощью ИИ в соответствии с законодательством РФ 2026</div>
+                        <a href="contacts.html" class="btn btn-outline">Заказать</a>
+                    </div>
+                </div>
+                
+                <!-- Calculator -->
+                <div class="calculator-section">
+                    <h2 class="calculator-title">Калькулятор стоимости</h2>
+                    <form id="calculatorForm">
+                        <div class="calculator-grid">
+                            <div class="calculator-field">
+                                <label>Тип контента</label>
+                                <select id="contentType">
+                                    <option value="photo">Карточка товара (фото)</option>
+                                    <option value="video">Видеоролик</option>
+                                    <option value="audio">Аудиотрек</option>
+                                    <option value="package">Комплекс (всё включено)</option>
+                                </select>
+                            </div>
+                            <div class="calculator-field">
+                                <label>Количество единиц</label>
+                                <input type="number" id="contentCount" value="1" min="1" max="100">
+                            </div>
+                            <div class="calculator-field">
+                                <label>Срочность</label>
+                                <select id="urgency">
+                                    <option value="normal">Обычная (3-5 дней)</option>
+                                    <option value="urgent">Срочная (24-48 часов)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="calculator-result">
+                            <div class="calculator-result-label">Примерная стоимость</div>
+                            <div class="calculator-result-price" id="resultPrice">от 500 ₽</div>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- What's Included -->
+                <div class="section-header" style="margin-top: 80px;">
+                    <h2 class="section-title">Что входит в <span class="gradient-text">работу</span></h2>
+                </div>
+                <div class="why-us-grid">
+                    <div class="why-us-card">
+                        <div class="why-us-number">01</div>
+                        <h3 class="why-us-title">Консультация</h3>
+                        <p class="why-us-desc">Анализ вашего товара и рекомендации по контенту с учётом требований конкретного маркетплейса.</p>
+                    </div>
+                    <div class="why-us-card">
+                        <div class="why-us-number">02</div>
+                        <h3 class="why-us-title">Генерация ИИ</h3>
+                        <p class="why-us-desc">Создание контента с использованием передовых нейросетей для изображений, видео и аудио.</p>
+                    </div>
+                    <div class="why-us-card">
+                        <div class="why-us-number">03</div>
+                        <h3 class="why-us-title">Проверка и адаптация</h3>
+                        <p class="why-us-desc">Финальная проверка качества и адаптация под требования маркетплейсов, включая пометки ИИ.</p>
+                    </div>
+                    <div class="why-us-card">
+                        <div class="why-us-number">04</div>
+                        <h3 class="why-us-title">Передача прав</h3>
+                        <p class="why-us-desc">После оплаты вы получаете исключительные права на контент по акту выполненных работ.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Нужна консультация?</h2>
+                    <p class="cta-subtitle">Свяжитесь с нами, и мы поможем подобрать оптимальное решение</p>
+                    <a href="contacts.html" class="btn btn-primary btn-large">Обсудить проект</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">CREATOR-BOX</span>
+                    </a>
+                    <p class="footer-desc">Контент-студия для маркетплейсов с использованием нейросетей. Соответствуем законам РФ 2026.</p>
+                    <div class="footer-social">
+                        <a href="https://t.me/WelIlIm" target="_blank" class="social-link" aria-label="Telegram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        </a>
+                        <a href="mailto:alina.musmusm@gmail.com" class="social-link" aria-label="Email">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="portfolio.html">Портфолио</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Документы</h4>
+                    <ul>
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Договор-оферта</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contacts">
+                    <h4>Контакты</h4>
+                    <p>Telegram: <a href="https://t.me/WelIlIm">@WelIlIm</a></p>
+                    <p>Email: <a href="mailto:alina.musmusm@gmail.com">alina.musmusm@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024-2026 CREATOR-BOX. Все права защищены. Контент маркирован как созданный с помощью ИИ.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
